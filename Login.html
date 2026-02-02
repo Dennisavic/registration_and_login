@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - User Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Welcome Back</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email Address" required>
+            <input type="text" id="loginUser" placeholder="Enter your username" required>
+            
+             <div class="password-wrapper">
+                 <input type="password" id="loginPass" placeholder="Password" required>
+                <span class="toggle-password" onclick="toggleVisibility('loginPass', this)">Show</span>
+            </div>
+            <div class="submit">
+            <button type="submit" class="btn-login">Login</button>
+            </div>
+            
+        </form>
+        <div class="switch-link">
+            <span>Don't have an account?</span>
+            <a href="register.html">Register here</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

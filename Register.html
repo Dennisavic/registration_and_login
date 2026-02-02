@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Create Account</h2>
+        <form id="regForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="text" id="regUser" placeholder="Username" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+             
+            <div class="password-wrapper">
+                <span class="toggle-password" onclick="toggleVisibility('regPass', this)">Show</span>
+            </div>           
+            <div class="password-wrapper">
+                <input type="password" id="regPass" placeholder="Password" required>
+                <span class="toggle-password" onclick="toggleVisibility('regPass', this)">Show</span>
+            </div>
+            <div class="password-wrapper">
+                <input type="password" id="confirmPass" placeholder="Confirm Password" required>
+                <span class="toggle-password" onclick="toggleVisibility('confirmPass', this)">Show</span>
+            </div>
+            <div class="register">
+            <button type="submit" class="btn-reg">Sign Up</button>
+            </div>
+            
+        </form>
+        <div class="switch-link">
+            <span>Already have an account?</span>
+            <a href="login.html">Login here</a>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

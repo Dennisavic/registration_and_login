@@ -1,0 +1,77 @@
+/* Allows room for scrolling on small screens */
+body {
+    font-family: sans-serif;
+    background-color:ocean burlywood;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+.form-container {
+    background: violet;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    padding-right: 10px; /* Space for the "Show" button */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 12px;
+    color: #424243;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #171616dc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-reg{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(40, 125, 70);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 0 15px 0;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #4ab84d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 0 15px 0;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 15px;
+}
